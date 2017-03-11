@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        position: relative;
+        width: 210px;
+        height: 120px;
+    }
+
+    #back img {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+
+    #qzone button {
+        width: 180px;
+        height: 60px;
+        font-size: 20px;
+        cursor:pointer;
+    }
+    #qzone button:hover{
+        border: solid 1px black;
+    }
+
+    #weibo button {
+        width: 180px;
+        height: 60px;
+        font-size: 20px;
+        cursor:pointer;
+    }
+    #weibo button:hover{
+        border: solid 1px black;
+    }
+
+    #qzone_l {
+        display: none;
+    }
+
+    #weibo_l {
+        display: none;
+    }
+
+    .btn1 button {
+        display: block;
+        width: 180px;
+        height: 50px;
+        font-size: 18px;
+        cursor:pointer;
+    }
+    .btn1 button:hover{
+        border: solid 1px  black;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="qzone">
+        <button type="button">Qzone说说管理</button>
+    </div>
+    <div id="weibo">
+        <button type="button">微博管理</button>
+    </div>
+    <div id="back">
+        <a href=""> <img src="images/back.png" alt="返回"></a>
+    </div>
+    <div id="qzone_l">
+        <div class="btn1">
+            <button type="button" id="like">一键点赞说说</button>
+        </div>
+        <div class="btn1">
+            <button type="button" id="delete">一键删除说说
+                <br>（除保护的外）</button>
+        </div>
+        <div class="btn1">
+            <button type="button" id="skip">保护当前说说
+                <br>（可保护多条）</button>
+        </div>
+        <div class="btn1">
+            <button type="button" id="one">删除一条说说</button>
+        </div>
+    </div>
+    <div id="weibo_l">
+        <div class="btn1">
+            <button type="button" id="like_w">一键点赞微博</button>
+        </div>
+        <div class="btn1">
+            <button type="button" id="delete_w">一键删除微博
+                <br>（除保护的外）</button>
+        </div>
+        <div class="btn1">
+            <button type="button" id="skip_w">保护当前微博
+                <br>（可保护多条）</button>
+        </div>
+        <div class="btn1">
+            <button type="button" id="one_w">删除一条微博</button>
+        </div>
+    </div>
+    <script src="js/controller.js"></script>
+    <script src="js/layout.js"></script>
+</body>
+
+</html>
